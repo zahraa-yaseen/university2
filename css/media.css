@@ -1,0 +1,175 @@
+.header{
+    display: none;
+}
+.sect2{
+    display: none;
+}
+
+
+.text h1{
+    font-size: 33px;
+    font-weight: 200;
+}
+.text p{
+    font-size:13px;
+    margin: 30px;
+
+}
+
+
+.ulonesmail{
+  
+    display: grid;
+    position: relative;
+    overflow: scroll ;
+    overflow-x: hidden;
+   height: 620px;
+    background-color:#1a7961;
+    display: block;
+    animation: amin 0.3s 1;
+width: 450px;
+
+    
+
+    
+  
+}
+.ulonesmail li{
+    padding: 20px;
+    cursor: pointer;
+    padding-right: 30px;
+
+
+}
+
+.ulonesmail li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.ulonesmail li:hover{
+    background-color:#11795f;
+
+}
+.part-ulonesmall ,
+.part-ulonesmall2 ,
+.part-ulonesmall3 ,
+.part-ulonesmall4 ,
+.part-ulonesmall5 {
+    position: relative;
+    top: 20px;
+    left: 0px;
+    bottom: 0px;
+    right: -30px;
+    list-style: none;
+    display: none;
+width: 435px;
+}
+.part-ulonesmall li ,
+.part-ulonesmall2 li,
+.part-ulonesmall3 li,
+.part-ulonesmall4 li,
+.part-ulonesmall5 li{
+    background: #309c81;    
+}
+
+.part-ulonesmall li:hover ,
+.part-ulonesmall2 li:hover,
+.part-ulonesmall3 li:hover,
+.part-ulonesmall4 li:hover,
+.part-ulonesmall5 li:hover{
+
+    background: #228b75;
+}
+.li0 ,.li1 ,.li2 ,.li3 ,.li4 ,.li5 ,.li6 ,.li7 ,.li8 ,.li9 ,.li10 ,.li11{
+    border-bottom: solid 1px rgb(129, 126, 126);
+}
+
+
+
+
+
+*/
+.fa-bars {
+    color: teal;
+    font-size: 29px;
+}
+.header2{
+    display: flex;
+justify-content: space-between;
+position: relative;
+top: 20px;
+
+
+}
+.burgar{
+    position: relative;
+    right: 14px;
+}
+/*
+@keyframes amin{
+0%{
+transform: translate(20px);
+}
+100%{
+    transform: translate(0px);
+
+}*/
+
+ .fa-angle-down {
+   
+    position: absolute;
+    left: 17px;
+    color: teal;
+
+}
+
+#part-nav{
+    display: none;
+}
+
+.language{
+   position: static;
+}
+.language a{
+    text-decoration: none;
+    margin-left: 22px;
+    color: #11795f;
+
+}
+.langu{
+    position: absolute;
+    left: 8px;
+}
+
+.sectslider{
+top: 40px;
+}
+
+.contant{
+   
+    display: flex;
+  
+}
+.bachground{
+width: 50%;
+height: 100vh;
+background:rgba(0, 0, 0,0.32);
+}
+.contantnav{
+    width: 65%;
+    height: 100vh;
+    
+}
+.sectcont{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    position: absolute;
+}
+.contant .fa-angle-down{
+    color: white;
+}
