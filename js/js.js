@@ -74,6 +74,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
 setInterval(() => {
     
     for (i =0; i < slides.length; i++) {
@@ -89,7 +92,7 @@ setInterval(() => {
     dots[slideIndex-1].className += " active";
     slideIndex++;
 
-}, 5000);
+}, 4000);
 
 
 //////////////////////////////////////

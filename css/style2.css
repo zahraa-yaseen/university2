@@ -3,13 +3,14 @@
    padding: 0px;
    margin: 0px;
    font-size: 17px;
-   direction: rtl;
+   direction: ltr;
    font-family: 'DroidKufi-Regular',Tahoma,Arial;
    font-size: 13px;
    
 }
 body{
     overflow-x: hidden;
+   
 }
 
 .header a{
@@ -42,7 +43,7 @@ body{
 }
 .language{
     padding-top: 17px;
-    transform: translate(48px, 2px);
+    transform: translate(0px, 0px);
 
 }
 .language a span{
@@ -59,12 +60,12 @@ display: none;
 
 .ulone{
     list-style: none;
-    transform: translate(48px, 10px);
+    
    
 }
 
 .ulone li{
-    float: right;
+    float: left;
     padding: 15px;
     padding-bottom: 40px;
     font-weight: 600 !important;
@@ -77,6 +78,8 @@ display: none;
 .navlanguage{
     top: 10px;
     list-style: none;
+    
+  
 }
 .langu{
     box-shadow: 0 0 3px 0 black;
@@ -94,7 +97,6 @@ display: none;
     background: rgb(203, 203, 206);
     position: absolute;
     top: 38px;
-   
 }
 .imagflayiraq{
     background-image: url("/image/iraq.png"); 
@@ -106,7 +108,7 @@ display: none;
    }
    .navlanguage a{
 line-height: 30px;
-padding-right: 20px;
+padding-left: 20px;
 padding-top: 0px;
 padding-bottom: 20px;
 
@@ -216,15 +218,16 @@ display: none;
 
     }
 .navone .ulone{
-margin-top:50px;
-width: 740px;
+    position: relative;
+    right: 43px;
+}
+.liulone a{
+    font-size: 13px;
 }
  .header .part-ulone , .header.part-ulone3 , .header .part-ulone4 , .header .part-ulone6 {
     top: 130px;
 }
-.language{
-    margin-right: -100px;
-}
+
 
 }
 @media (max-width:1120px ){
@@ -235,37 +238,26 @@ width: 740px;
 }
 
 @media (max-width:1031px ){
-   
-    .ulone{
-        margin-right: -90px;
-        padding-top:10px ;
-        
-    }
-    .language{
-        right:76px;
+  
+    .liulone a{
+        font-size: 12px;
     }
     
+    
     }
-    @media (max-width:944px ){
    
-        .ulone{
-            margin-right: -200px;
-            padding-top:10px ;
-            
-        }
-        .language{
-            right:117px;
-        }
-        
-        }
 
 .header2{
     display: none;
 }
     
-
+@media (max-width: 988px){
+    .liulone a{
+        font-size: 10px;
+    }
+    }
 .sect2{
-   background-color: #1a946d;
+    background-color: #1a946d;
     position: relative;
     top: 70px;
     border-radius: 3px;
@@ -394,10 +386,12 @@ position:relative;
 
 .decoration{
     position: absolute;
-    top: 212px;
+    top: 0px;
     right: 0px;
     left: 0px;
     bottom: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 .right{
    
@@ -409,8 +403,8 @@ position:relative;
 
 .left{
     padding: 226px 20px;
-    float: left;
-        transform: translateY(-211px);
+   
+       
     background-image: -webkit-linear-gradient(right ,rgba(0,0,0,.0001) 0,rgba(0, 0, 0, 0.5) 300%);
 
 }
@@ -649,7 +643,7 @@ background: white;
     .med h3 ,.pharm h3 ,.nurs h3 ,.dent h3{
         position: absolute;
     top: 214px;
-   
+    
     text-align: center;
     background: rgb(23 21 21 / 80%);
     width: 255px;
@@ -762,7 +756,8 @@ background: white;
         top: 61px;
     font-size: 28px;
     font-family: 'Almarai', sans-serif;
-    padding-bottom: 61px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     }
     .sect7 .span1{
         position: absolute;
@@ -782,35 +777,27 @@ background: white;
     }
 
     .imgnews img{
-        width: 356px;
+        width: 366px;
         height: 265px;
 
     }
-    .new1:hover .imgnews img ,
-.new2:hover .imgnews img ,
-.new3:hover .imgnews img {
-    
-   
-    transform: scaleX(1.1) ;
-
-    transition: 1s ease-out;
-    
-}
     @media (min-width:1000px){
         .news{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1.1fr 1.1fr 1.1fr;
         }
-        .new1:hover .imgnews img ,
-.new2:hover .imgnews img ,
-.new3:hover .imgnews img {
-    
-   
-    transform: scaleX(1.1) ;
 
-    transition: 1s ease-out;
-    
-}
+        .new1:hover .imgnews img ,
+        .new2:hover .imgnews img ,
+        .new3:hover .imgnews img {
+            
+           
+            transform: scaleX(1.1) ;
+        
+            transition: 1s ease-out;
+            
+        }
+
 
     }
     @media (max-width:1122px){
@@ -818,23 +805,23 @@ background: white;
  
        
          display: grid;
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 1.1fr 1.1fr;
  
      }
+     .new1:hover .imgnews img ,
+.new2:hover .imgnews img ,
+.new3:hover .imgnews img {
+    
+   
+    transform: scaleX(1.1) ;
+    transition: 1s ease-out;
+    
+}
+
+
     .imgnews img{
         width: 469px;
-
     }
-    .new1:hover .imgnews img ,
-     .new2:hover .imgnews img ,
-     .new3:hover .imgnews img {
-         
-        
-         transform: scaleX(1.1) ;
-     
-         transition: 1s ease-out;
-         
-     }
     
     }
      @media (max-width:700px){
@@ -842,9 +829,10 @@ background: white;
  
         
          display: grid;
-         grid-template-columns: 1fr;
+         grid-template-columns: 1.1fr;
  
      }
+    
      .new1:hover .imgnews img ,
      .new2:hover .imgnews img ,
      .new3:hover .imgnews img {
@@ -855,11 +843,9 @@ background: white;
          transition: 1s ease-out;
          
      }
-
      .imgnews img{
         width: 530px;
     }
-    
     
     
     }
@@ -922,17 +908,21 @@ background: white;
     background: #45d0a3;
     outline: none;
     border: none;
-    position:absolute;
+    position: absolute;
     height: 38px;
     bottom: 0px;
     width: 111px;
     margin-bottom: 22px;
 }
 
-.new1 :hover .imgnews img{
+.new1:hover .imgnews img ,
+.new2:hover .imgnews img ,
+.new3:hover .imgnews img {
     
-    -o-transform: scale3d(1.1);
-    transform: scale3d(1.1);
+   
+    transform: scaleX(1.1) ;
+
+    transition: 1s ease-out;
     
 }
 
@@ -1099,6 +1089,7 @@ background: rgb(104, 103, 103);
 
 }
 .fa-eye{
+    direction: rtl;
     position: absolute;
     left: 0px;
     right: 0px;
@@ -1170,6 +1161,7 @@ footer{
     background: white;
     color: turquoise;
 }
+
 
 /*/////////////////////////////////////////////////نخبه عن الاساتذه ///////////////////////*/
 .sect9{
@@ -1307,7 +1299,6 @@ footer{
 }
 
 
-
     .classcreatejs{
         background: #0e0606da;
         position: fixed;
@@ -1350,7 +1341,13 @@ footer{
       color: rgb(231, 225, 225);
       
     }
+
+
     .part3 .fa{
         font-size: 42px;
-    transform: translate(51px, -9px);
+    transform: translate(-51px, -9px);
     }
+    
+
+    
+    

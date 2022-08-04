@@ -99,14 +99,19 @@ width: 435px;
 .header2{
     display: flex;
 justify-content: space-between;
-position: relative;
-top: 20px;
+position: fixed;
+padding-top: 20px;
+background: white;
+width: 100%;
+z-index: 99;
+height: 80px;
+border-bottom: solid rgb(161, 158, 158);
+
 
 
 }
 .burgar{
-    position: relative;
-    right: 14px;
+    
 }
 /*
 @keyframes amin{
@@ -120,8 +125,7 @@ transform: translate(20px);
 
  .fa-angle-down {
    
-    position: absolute;
-    left: 17px;
+   
     color: teal;
 
 }
@@ -130,9 +134,8 @@ transform: translate(20px);
     display: none;
 }
 
-.language{
-   position: static;
-}
+
+
 .language a{
     text-decoration: none;
     margin-left: 22px;
@@ -146,6 +149,7 @@ transform: translate(20px);
 
 .sectslider{
 top: 40px;
+
 }
 
 .contant{
@@ -159,7 +163,7 @@ height: 100vh;
 background:rgba(0, 0, 0,0.32);
 }
 .contantnav{
-    width: 65%;
+    width: 50%;
     height: 100vh;
     
 }
